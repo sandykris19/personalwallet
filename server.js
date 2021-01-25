@@ -5,7 +5,8 @@ const Transc = require("./models/Transactions");
 
 const app = express();
 
-const dbURI = process.env.URL;
+const dbURI =
+  "mongodb+srv://m001-student:m001-password@sandbox.yqnjh.mongodb.net/wallet?retryWrites=true&w=majority";
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
