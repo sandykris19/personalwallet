@@ -1,0 +1,8 @@
+.listnav {
+    display: flex;
+    width: 250px;
+}
+.foo{
+    display: flex;
+    background: whitesmoke;
+}
