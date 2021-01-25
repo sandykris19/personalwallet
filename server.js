@@ -2,8 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const User = require("./models/User");
 const Transc = require("./models/Transactions");
-require("dotenv").config();
-const path = require("path");
 
 const app = express();
 
@@ -21,7 +19,7 @@ mongoose
 //middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('build'));
+app.use(express.static("build"));
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("client/build"));
 //   app.get("*", (req, res) => {
